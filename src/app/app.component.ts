@@ -13,34 +13,34 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit() {
     let observable$ = new Observable((observer: any) => {
       // case 1
-      // observer.next('A');
-      // observer.next('B');
-      // observer.error('Error occured.');
-      // observer.complete('Data stream is over.');
-      // observer.next('C');
+      observer.next('A');
+      observer.next('B');
+      observer.error('Error occured.');
+      observer.complete('Data stream is over.');
+      observer.next('C');
       // output: A B
 
       // case 2
-      // observer.next('A');
-      // observer.next('B');
-      // observer.complete('Data stream is over.');
-      // observer.next('C');
+      observer.next('A');
+      observer.next('B');
+      observer.complete('Data stream is over.');
+      observer.next('C');
       // output: A B
 
       // case 3
-      // observer.next('A');
-      // observer.next('B');
-      // observer.complete('Data stream is over.');
-      // observer.next('C');
-      // observer.error('Error occured.');
+      observer.next('A');
+      observer.next('B');
+      observer.complete('Data stream is over.');
+      observer.next('C');
+      observer.error('Error occured.');
       // output: A B
 
       // case 3
-      // observer.next('A');
-      // observer.next('B');
-      // observer.complete('Data stream is over.');
-      // observer.error('Error occured.');
-      // observer.next('C');
+      observer.next('A');
+      observer.next('B');
+      observer.complete('Data stream is over.');
+      observer.error('Error occured.');
+      observer.next('C');
       // output: A B
 
       // case 4
